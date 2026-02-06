@@ -15,5 +15,9 @@ def api_test():
         "reply": f"Response: {message}"
     })
 
+@app.route("/greetings")
+def greeting():
+    return "<h1>Hey, I am Jwal. Who are you...!!</h1>"
+
 if __name__ == "__main__":
     app.run(debug=True)
